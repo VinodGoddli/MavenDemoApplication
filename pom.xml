@@ -13,6 +13,15 @@
 		</dependency>
 	</dependencies>
 	
+	<distributionManagement>
+        
+        <releaseRepository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/repository/myrepository/</url>
+        </releaseRepository>
+    </distributionManagement>
+	
 	<build>
 	<plugins>
 		<plugin>
