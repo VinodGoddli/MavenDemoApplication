@@ -15,11 +15,11 @@
 	
 	<distributionManagement>
         
-        <releaseRepository>
+        <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
             <url>http://localhost:8081/repository/myrepository/</url>
-        </releaseRepository>
+        </repository>
     </distributionManagement>
 	
 	<build>
