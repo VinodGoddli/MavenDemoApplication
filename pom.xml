@@ -2,7 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.demo</groupId>
   <artifactId>MavenDemoApplication</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <!-- <version>0.0.1-SNAPSHOT</version> -->
+  <version>0.0.1</version>
   <name>MavenDemoApplication</name>
   <dependencies>
 		<dependency>
@@ -12,16 +13,18 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
 	<distributionManagement>
-        
         <repository>
             <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://localhost:8081/repository/myrepository/</url>
+            <name>Releases</name>
+            <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Snapshot Releases</name>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
-	
 	<build>
 	<plugins>
 		<plugin>
